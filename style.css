@@ -1,12 +1,15 @@
 /* #292929 - #B4AEA7 - #B0815F 
+
+font-family: 'Fira Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Mandali', sans-serif;
 */
 
 /*-------- GLOBAL STYLES ---------*/
 html {
     font-size: 62.5%;
-    font-family: "Roboto", sans-serif;
-    font-family: "mandali", sans-serif;
   }
+
   body {
     box-sizing: border-box;
     font-size: 1.6rem;
@@ -31,14 +34,14 @@ html {
   h2,
   h3,
   h4 {
-    font-family: "Roboto";
+    font-family: "Poppins";
     font-weight: 400;
   }
 
   h1 {
-    font-size: 9.8rem;
-    line-height: 12rem;
-    letter-spacing: .5rem;
+    font-size: 4.4rem;
+    line-height: 5.5rem;
+    letter-spacing: .1rem;
   }
 
   h2 {
@@ -49,9 +52,14 @@ html {
     color: #B4AEA7;
     text-decoration: none;
     text-transform: uppercase;
-    font-family: "roboto";
+    font-family: "Poppins";
     font-size: 1.4rem;
   }
+
+
+
+
+  
 
   /* ================  HEADER SECTION =================== */
   header {
@@ -89,13 +97,26 @@ html {
     align-items: flex-end;
   }
 
+  /*  ================    MOBILE - HERO     ==================== */
 
-  /* ================  HERO SECTION =================== */
   .hero {
     display: flex;
     background-image: url("images/khamkeo-vilaysing-DXTRyjAeA5E-unsplash.jpg");
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    height: 100svh;
+  }
+
+
+  /* ================  DESKTOP - HERO SECTION =================== */
+  
+  /*
+  .hero {
+    display: flex;
+    background-image: url("images/khamkeo-vilaysing-DXTRyjAeA5E-unsplash.jpg");
+    background-position: center; 
+    background-repeat: no-repeat; 
     background-size: cover;
     height: 100vh;
   }
@@ -103,9 +124,10 @@ html {
   .hero-container {
    /* display: flex;
     justify-items: center;
-    align-items: center; */
+    align-items: center; 
   }
 
   h1 {
     max-width: 65%;
   }
+*/
