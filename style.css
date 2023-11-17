@@ -1,0 +1,111 @@
+/* #292929 - #B4AEA7 - #B0815F 
+*/
+
+/*-------- GLOBAL STYLES ---------*/
+html {
+    font-size: 62.5%;
+    font-family: "Roboto", sans-serif;
+    font-family: "mandali", sans-serif;
+  }
+  body {
+    box-sizing: border-box;
+    font-size: 1.6rem;
+    text-align: left;
+    margin: 0%;
+    background-color: #292929;
+    font-family: "Mandali", sans-serif;
+    color: #B4AEA7;
+  }
+
+  section {
+    margin: auto;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 5% 0;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: "Roboto";
+    font-weight: 400;
+  }
+
+  h1 {
+    font-size: 9.8rem;
+    line-height: 12rem;
+    letter-spacing: .5rem;
+  }
+
+  h2 {
+    font-size: 6.3rem;
+  }
+
+  a {
+    color: #B4AEA7;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "roboto";
+    font-size: 1.4rem;
+  }
+
+  /* ================  HEADER SECTION =================== */
+  header {
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    margin-bottom: 10px;
+    border-radius: 3px;
+    padding: 0 16px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  nav {
+    padding-top: 30px;
+    text-align: right;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+  }
+  
+  nav ul li {
+    padding: 8px 0;
+  }
+  
+  nav ul li a {
+    color: #B4AEA7;
+  }
+  
+  .show-items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+
+  /* ================  HERO SECTION =================== */
+  .hero {
+    display: flex;
+    background-image: url("images/khamkeo-vilaysing-DXTRyjAeA5E-unsplash.jpg");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    height: 100vh;
+  }
+
+  .hero-container {
+   /* display: flex;
+    justify-items: center;
+    align-items: center; */
+  }
+
+  h1 {
+    max-width: 65%;
+  }
