@@ -76,9 +76,9 @@ h3 {
 }
 
 a {
-  color: rgb(180, 174, 167);
+  color: #b4aea7;
   font-family: "Poppins";
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 a:hover {
   color: #bd871f;
@@ -154,11 +154,7 @@ nav .fa {
   color: b4aea7;
   margin-top: 13px;
 }
-/*
-.toggle {
-  margin-top: 10px;
-}
-*/
+
 header a.button {
   display: none;
 }
@@ -198,8 +194,8 @@ header a.button {
 }
 
 .about a {
-  text-transform: initial;
-  text-decoration: underline;
+  font-size: 2.4rem;
+  display: block;
 }
 
 .about a:hover {
@@ -214,20 +210,13 @@ header a.button {
 
 /*  ================    MOBILE - CTA     ==================== */
 
-section.cta {
-  min-height: 80svh;
-}
-
-.cta .container {
-  padding-bottom: 0;
-}
 .cta h3 {
   margin-bottom: 50px;
 }
 
 .cta a {
-  text-transform: initial;
-  text-decoration: underline;
+  font-size: 2.4rem;
+  line-height: 1rem;
 }
 
 .cta a:hover {
@@ -236,9 +225,6 @@ section.cta {
   font-weight: 400;
 }
 
-.cta a h3 {
-  line-height: 1rem;
-}
 
 /*  ================    MOBILE - FOOTER     ==================== */
 /*
@@ -268,7 +254,7 @@ footer a:hover {
   font-weight: 400;
 }
 
-footer a h3 {
+footer a {
   line-height: 1rem;
 }
 
@@ -296,20 +282,16 @@ footer img {
     max-width: 1200px;
   }
 
-/* Not sure if this is needed for hamburger menu function. trying to copy from
+  /* Not sure if this is needed for hamburger menu function. trying to copy from
 previous assignment, because I don't undestand it yet */
-#nav-items {
-  display: flex;
-  flex-direction: row;
-  gap: 40px;
+  #nav-items {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
 }
-}
-
 
 /* ================  DESKTOP - HERO SECTION =================== */
-
-
-
 
 /*
   .hero {
