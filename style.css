@@ -42,7 +42,7 @@ section {
   bottom: 0;
   left: 50%;
   transform: translate(-50%, -50%);
-  border-bottom: 1px solid #b4aea7;
+  border-bottom: 2px solid #bd871f;
   width: 50%;
 }
 .container {
@@ -88,6 +88,12 @@ a:hover {
   color: #bd871f;
   /* text-decoration: underline; */
   font-weight: 400;
+}
+
+.body-links {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
 }
 
 /*
@@ -293,6 +299,10 @@ footer img {
     width: 100%;
   }
 
+  .divider {
+    width: 33%;
+  }
+
   /* ================  DESKTOP - HEADER SECTION =================== */
 
   header {
@@ -319,47 +329,71 @@ footer img {
     display: flex;
     gap: 40px;
   }
-}
 
-/* ================  DESKTOP - HERO SECTION =================== */
+  /* ================  DESKTOP - HERO SECTION =================== */
 
-.container {
-  max-width: 1200px;
-}
-
-h1 {
-  width: 80%;
-  font-size: 9.8rem;
-  line-height: 12rem;
-}
-
-/* ================  DESKTOP - BENEFIT SECTION =================== */
-
-.features .container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-h2 {
-  font-size: 6.5rem;
-  line-height: 8rem;
-  width: 50%;
-}
-
-.features img {
-  width: 40%;
-  margin: 0;
-}
-
-/*
-  .hero-container {
-    display: flex;
-    justify-items: center;
-    align-items: center; 
+  .container {
+    max-width: 1200px;
   }
 
   h1 {
-    max-width: 65%;
+    width: 80%;
+    font-size: 9.8rem;
+    line-height: 12rem;
   }
-*/
+
+  /* ================  DESKTOP - BENEFIT SECTION =================== */
+
+  .features .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  h2 {
+    font-size: 6.5rem;
+    line-height: 8rem;
+    width: 50%;
+  }
+
+  .features img {
+    width: 40%;
+    margin: 0;
+  }
+
+  /* ================  DESKTOP - ABOUT SECTION =================== */
+
+  .about-1 {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .about-2 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  .about img {
+    width: 60%;
+    margin: 0;
+  }
+
+  .body-links {
+    justify-content: flex-end;
+    margin-left: 40px;
+  }
+
+  .about a {
+    font-size: 3.5rem;
+  }
+
+  h3 {
+    font-size: 6rem;
+    line-height: 7.5rem;
+  }
+
+}
