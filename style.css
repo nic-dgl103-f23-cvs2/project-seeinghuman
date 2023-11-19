@@ -77,11 +77,14 @@ h3 {
 }
 
 a {
-  color: #b4aea7;
-  text-decoration: none;
-  text-transform: uppercase;
+  color: rgb(180, 174, 167);
   font-family: "Poppins";
-  font-size: 1.4rem;
+  font-size: 1.8rem;
+}
+a:hover {
+  color: #bd871f;
+  text-decoration: underline;
+  font-weight: 400;
 }
 
 /*
@@ -107,8 +110,8 @@ header {
   align-items: flex-start;
   position: fixed;
   width: 100vw;
-  background-color: #292929;
-  opacity: 70%;
+  background-color: rgba(41, 41, 41, 0.7);
+  /* Founf this bg color fix - that left text color alone: https://www.tutorialspoint.com/set-the-opacity-only-to-background-color-not-on-the-text-in-css#:~:text=Sometimes%2C%20we%20may%20require%20to,the%20'background%20color'%20property.*/
   z-index: 10;
 }
 
@@ -124,7 +127,6 @@ header img {
   width: 100%;
   text-align: right;
   padding-right: 40px;
-  padding-top: 13px;
   color: white;
 }
 
@@ -140,20 +142,24 @@ nav ul li {
 }
 
 nav ul li a {
-  color: white;
-} 
+  color: #b4aea7;
+}
 
 .show-items {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
 }
 
 nav .fa {
   font-size: 2rem;
-  color: white;
+  color: b4aea7;
+  margin-top: 13px;
 }
-
+/*
+.toggle {
+  margin-top: 10px;
+}
+*/
 header a.button {
   display: none;
 }
