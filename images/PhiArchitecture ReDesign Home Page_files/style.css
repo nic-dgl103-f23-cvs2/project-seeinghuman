@@ -52,14 +52,11 @@ section {
 }
 
 h1,
-h2 {
-  font-family: "Poppins";
-  font-weight: 300;
-}
-
+h2,
 h3,
 h4 {
-  font-family: "Mandali", sans-serif;
+  font-family: "Poppins";
+  font-weight: 300;
 }
 
 h1 {
@@ -75,18 +72,17 @@ h2 {
 
 h3 {
   font-size: 2rem;
-  line-height: 3rem;
+  line-height: 3.3rem;
 }
 
 a {
   color: #b4aea7;
   font-family: "Poppins";
   font-size: 1.6rem;
-  text-decoration: none;
 }
 a:hover {
   color: #bd871f;
-  /* text-decoration: underline; */
+  text-decoration: underline;
   font-weight: 400;
 }
 
@@ -114,6 +110,7 @@ header {
   position: fixed;
   width: 100%;
   background-color: rgba(41, 41, 41, 0.8);
+  /* Founf this bg color fix - that left text color alone: https://www.tutorialspoint.com/set-the-opacity-only-to-background-color-not-on-the-text-in-css#:~:text=Sometimes%2C%20we%20may%20require%20to,the%20'background%20color'%20property.*/
   z-index: 10;
 }
 
@@ -121,7 +118,7 @@ header img {
   width: 20vw;
 }
 
-.top-nav {
+.navbar {
   display: flex;
   align-self: center;
   flex-direction: column;
@@ -198,12 +195,12 @@ header a.button {
 
 .about a {
   font-size: 2.4rem;
-  display: inline;
+  display: flex;
 }
 
 .about a:hover {
   color: #bd871f;
-  /*  text-decoration: underline; */
+  text-decoration: underline;
   font-weight: 400;
 }
 
@@ -213,29 +210,21 @@ header a.button {
 
 /*  ================    MOBILE - CTA     ==================== */
 
-.cta .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 .cta h3 {
   margin-bottom: 50px;
 }
 
-a.cta {
+.cta a {
   font-size: 2.4rem;
   line-height: 1rem;
-  color: #b4aea7;
-  border: 2px solid #bd871f;
-  padding: 16px 24px;
-  border-radius: 8px;
 }
 
 .cta a:hover {
   color: #bd871f;
-  border: 2px solid #b4aea7;
+  text-decoration: underline;
   font-weight: 400;
 }
+
 
 /*  ================    MOBILE - FOOTER     ==================== */
 /*
@@ -253,14 +242,15 @@ footer ul {
   list-style-type: none;
   padding: 0;
 }
-/*
+
 footer a {
   text-transform: initial;
   text-decoration: underline;
-} */
+}
 
 footer a:hover {
   color: #bd871f;
+  text-decoration: underline;
   font-weight: 400;
 }
 
@@ -269,7 +259,7 @@ footer a {
 }
 
 footer img {
-  width: 150px;
+  width: 50%;
   margin-left: -16px;
   padding: 3% 0;
 }
@@ -287,74 +277,34 @@ footer img {
 /*  ***** START OF DESKTOP SECTIONS *****  */
 
 /* Large devices (desktops, 1200px and up) */
-
 @media only screen and (min-width: 1200px) {
   section {
-    width: 100%;
+    max-width: 1200px;
   }
 
-  /* ================  DESKTOP - HEADER SECTION =================== */
-
-  header {
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  header img {
-    width: 150px;
-    margin-left: 3%;
-  }
-
-  .top-nav {
-    width: auto;
-    padding-right: 0;
-    margin-right: 8%;
-  }
-
-  nav .toggle {
-    display: none;
-  }
-
+  /* Not sure if this is needed for hamburger menu function. trying to copy from
+previous assignment, because I don't undestand it yet */
   #nav-items {
     display: flex;
+    flex-direction: row;
     gap: 40px;
   }
 }
 
 /* ================  DESKTOP - HERO SECTION =================== */
 
-.container {
-  max-width: 1200px;
-}
-
-h1 {
-  width: 80%;
-  font-size: 9.8rem;
-  line-height: 12rem;
-}
-
-/* ================  DESKTOP - BENEFIT SECTION =================== */
-
-.features .container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-h2 {
-  font-size: 6.5rem;
-  line-height: 8rem;
-  width: 50%;
-}
-
-.features img {
-  width: 40%;
-  margin: 0;
-}
-
 /*
-  .hero-container {
+  .hero {
     display: flex;
+    background-image: url("images/khamkeo-vilaysing-DXTRyjAeA5E-unsplash.jpg");
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    height: 100vh;
+  }
+
+  .hero-container {
+   /* display: flex;
     justify-items: center;
     align-items: center; 
   }
