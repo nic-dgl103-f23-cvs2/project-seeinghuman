@@ -108,7 +108,7 @@ header {
   position: fixed;
   width: 100%;
   background-color: rgba(41, 41, 41, 0.8);
-  z-index: 10;
+  z-index: 20;
 }
 
 header img {
