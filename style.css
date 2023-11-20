@@ -168,6 +168,21 @@ header a.button {
   min-height: 100svh;
 }
 
+.hero::after {
+  content: "";
+  background: rgba(29, 29, 29, 0.292);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.hero > * {
+  z-index: 10;
+}
+
 .hero .container {
   display: flex;
   align-items: center;
