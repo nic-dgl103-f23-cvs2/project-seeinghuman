@@ -82,6 +82,7 @@ a {
   font-family: "Mandali", sans-serif;
   text-decoration: none;
   margin: 0;
+  font-size: 1.8rem;
 }
 a:hover {
   color: #bd871f;
@@ -352,7 +353,7 @@ footer img {
   .about-1 {
     display: flex;
     justify-content: flex-end;
-    margin-bottom: 0;
+    margin-bottom: 12vh;
     padding-bottom: 0;
   }
 
