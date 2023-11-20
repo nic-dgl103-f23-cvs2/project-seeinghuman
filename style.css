@@ -48,7 +48,7 @@ section {
 .container {
   max-width: 90%;
   margin: 0 auto;
-  padding: 10% 0;
+  padding: 10vh 0;
 }
 
 h1,
@@ -57,6 +57,7 @@ h3,
 h4 {
   font-family: "Poppins";
   font-weight: 300;
+  margin: 0;
 }
 
 h1 {
@@ -68,6 +69,7 @@ h1 {
 h2 {
   font-size: 3.2rem;
   line-height: 4.2rem;
+  margin: 0;
 }
 
 h3 {
@@ -79,6 +81,7 @@ a {
   color: #b4aea7;
   font-family: "Mandali", sans-serif;
   text-decoration: none;
+  margin: 0;
 }
 a:hover {
   color: #bd871f;
@@ -90,20 +93,8 @@ a:hover {
   display: flex;
   flex-direction: column;
   padding: 0;
+  margin: 0;
 }
-
-/*
-a.button {
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 1.2rem;
-  line-height: 2rem;
-  font-weight: 200;
-  color: #ffffff;
-  background-color: #505d68;
-  border-radius: 3px;
-  padding: 10px 50px;
-}*/
 
 /* ================  HEADER MOBILE SECTION =================== */
 
@@ -141,9 +132,10 @@ nav ul {
   display: none;
 }
 
+/*
 nav ul li {
   padding: 8px 0;
-}
+} */
 
 nav ul li a {
   color: #b4aea7;
@@ -180,22 +172,22 @@ header a.button {
   align-items: center;
 }
 
-/*  ================    MOBILE - BENEFITS     ==================== */
+/*  ================    MOBILE - FEATURES     ==================== */
 
 .features .container {
   display: flex;
   flex-direction: column;
-}
-
-.features img {
-  margin: 10% 0;
+  gap: 5vh;
 }
 
 /*  ================    MOBILE - ABOUT     ==================== */
 
+.about-1 {
+  padding-bottom: 0;
+}
+
 .about img {
   width: 100%;
-  margin-top: 15%;
 }
 
 .about a {
@@ -220,9 +212,6 @@ header a.button {
   flex-direction: column;
   align-items: center;
 }
-.cta h3 {
-  margin-bottom: 50px;
-}
 
 a.cta {
   font-size: 2.4rem;
@@ -231,6 +220,7 @@ a.cta {
   border: 2px solid #bd871f;
   padding: 16px 24px;
   border-radius: 8px;
+  margin-top: 50px;
 }
 
 .cta a:hover {
@@ -240,20 +230,15 @@ a.cta {
 }
 
 /*  ================    MOBILE - FOOTER     ==================== */
-/*
-footer ul {
-  text-transform: uppercase;
-  font-size: 1.2rem;
-  line-height: 2rem;
-  list-style: none;
-  color: #505d68;
-  padding: 0;
-  text-align: center;
+
+footer .container {
+  padding-bottom: 10px;
 }
-*/
+
 footer ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 /*
 footer a {
@@ -299,6 +284,11 @@ footer img {
     width: 33%;
   }
 
+  .container {
+    padding: 12vh 0;
+  }
+
+
   /* ================  DESKTOP - HEADER SECTION =================== */
 
   header {
@@ -338,7 +328,7 @@ footer img {
     line-height: 12rem;
   }
 
-  /* ================  DESKTOP - BENEFIT SECTION =================== */
+  /* ================  DESKTOP - FEATURES SECTION =================== */
 
   .features .container {
     display: flex;
@@ -376,6 +366,7 @@ footer img {
   .about img {
     width: 60%;
     margin: 0;
+
   }
 
   .body-links {
