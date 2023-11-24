@@ -498,6 +498,12 @@ footer img {
   gap: 7vh;
 }
 
+.about-content-right {
+  display: flex;
+  flex-direction: column;
+  gap: 7vh;
+}
+
 .trade-links {
   display: flex;
   justify-content: space-between;
