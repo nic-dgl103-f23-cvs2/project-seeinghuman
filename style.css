@@ -23,7 +23,7 @@ html {
 
 body {
   box-sizing: border-box;
-  font-size: 2.4rem;
+  font-size: 1.6rem;
   text-align: left;
   margin: 0%;
   background-color: #292929;
@@ -62,6 +62,7 @@ h4 {
 
 h1.title {
   font-size: 6rem;
+  margin: 5vh 0 10vh 0;
 }
 
 h1 {
@@ -78,6 +79,10 @@ h2 {
 
 h3 {
   font-size: 2.4rem;
+}
+
+p {
+  line-height: 2.4rem;
 }
 
 a {
@@ -113,6 +118,11 @@ a:hover {
 h3 {
   font-size: 4rem;
 }
+
+P {
+  font-size: 2.4rem;
+}
+
 }
 /* ================  HEADER MOBILE SECTION =================== */
 
@@ -174,7 +184,7 @@ header a.button {
   display: none;
 }
 
-/*  ================    MOBILE - HERO     ==================== */
+/*  ================    MAIN-MOBILE - HERO     ==================== */
 
 .hero {
   display: flex;
@@ -205,7 +215,7 @@ header a.button {
   align-items: center;
 }
 
-/*  ================    MOBILE - FEATURES     ==================== */
+/*  ================    MAIN-MOBILE - FEATURES     ==================== */
 
 .features .container {
   display: flex;
@@ -213,7 +223,7 @@ header a.button {
   gap: 5vh;
 }
 
-/*  ================    MOBILE - ABOUT     ==================== */
+/*  ================    MAIN-MOBILE - ABOUT     ==================== */
 
 .about-1 {
   padding-bottom: 0;
@@ -240,7 +250,7 @@ header a.button {
   line-height: 1rem;
 }
 
-/*  ================    MOBILE - CTA     ==================== */
+/*  ================    MAIN-MOBILE - CTA     ==================== */
 
 .cta .container {
   display: flex;
@@ -264,7 +274,7 @@ a.cta {
   font-weight: 400;
 }*/
 
-/*  ================    MOBILE - FOOTER     ==================== */
+/*  ================    MAIN-MOBILE - FOOTER     ==================== */
 
 footer .container {
   padding-bottom: 10px;
@@ -482,13 +492,23 @@ footer img {
 
 /* =====================  ABOUT PAGE - MOBILE  ===================== */
 
+.about-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10vh;
+}
+
+.trade-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.trade-links img {
+  width: 20%;
+}
 
 /* =====================  PROJECTS PAGE - MOBILE  ===================== */
 
-
-h1.title {
-  margin: 5vh 0 10vh 0;
-}
 
 .project-link {
   margin-bottom: 7vh;
