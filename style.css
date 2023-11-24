@@ -522,7 +522,9 @@ footer img {
   padding-bottom: 3vh;
 }
 
-/* =====================  OUR COMMITMENT PAGE - MOBILE  ===================== */
+/* =====================  OUR PROMISE PAGE - MOBILE  ===================== */
 
-
+.promise-text {
+  margin-top: 7vh;
+}
 /* =====================  CONTACT PAGE - MOBILE  ===================== */
