@@ -495,7 +495,7 @@ footer img {
 .about-container {
   display: flex;
   flex-direction: column;
-  gap: 10vh;
+  gap: 7vh;
 }
 
 .trade-links {
