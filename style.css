@@ -506,7 +506,7 @@ footer img {
 
 .trade-links {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .trade-links img {
@@ -527,6 +527,41 @@ footer img {
 .projects-gallery {
   padding-bottom: 3vh;
 }
+
+.list {
+  overflow-x:auto;
+}
+
+caption {
+  font-size: 2rem;
+  padding-bottom: 10px;
+}
+
+thead {
+  color: #bd871f;
+  background-color: #404040;
+}
+
+tr:nth-child(even) {
+  background-color: #404040;
+}
+
+th {
+  padding: 10px 5px;
+}
+
+td {
+  line-height: 1.8rem;
+  padding: 10px 5px;
+}
+
+tfoot {
+  background-color: #404040;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+
 
 /* =====================  OUR PROMISE PAGE - MOBILE  ===================== */
 
