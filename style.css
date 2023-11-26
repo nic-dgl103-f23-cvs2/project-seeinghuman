@@ -60,15 +60,20 @@ h4 {
   margin: 0;
 }
 
-h1.title {
-  font-size: 6rem;
-  margin: 5vh 0 10vh 0;
-}
-
 h1 {
   font-size: 4.5rem;
   line-height: 5.5rem;
   letter-spacing: 0.1rem;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 9vh;
+  margin-bottom: -10vh;
+}
+
+h1.title {
+  font-size: 6rem;
+  margin: 5vh 0 10vh 0;
+  position: initial;
 }
 
 h2 {
@@ -110,19 +115,17 @@ a:hover {
 
 /* ============ GLOBAL CHANGES DESKTOP ==================== */
 @media only screen and (min-width: 1200px) {
-
   h1.title {
     font-size: 17.5rem;
   }
 
-h3 {
-  font-size: 4rem;
-}
+  h3 {
+    font-size: 4rem;
+  }
 
-P {
-  font-size: 2.4rem;
-}
-
+  P {
+    font-size: 2.4rem;
+  }
 }
 /* ================  HEADER MOBILE SECTION =================== */
 
@@ -291,7 +294,7 @@ footer a {
   text-decoration: underline;
 } */
 
- /*
+/*
 footer a:hover {
   color: #bd871f;
   font-weight: 400;
@@ -316,6 +319,177 @@ footer img {
   font-size: 1.4rem;
   line-height: 1.6rem;
   font-weight: 200;
+}
+
+/* =====================  ABOUT PAGE - MOBILE  ===================== */
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  gap: 7vh;
+}
+
+.about-content-right {
+  display: flex;
+  flex-direction: column;
+  gap: 7vh;
+}
+
+.trade-links {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.trade-links img {
+  width: 20%;
+}
+
+/* =====================  PROJECTS PAGE - MOBILE  ===================== */
+
+.project-link {
+  margin-bottom: 7vh;
+}
+.projects img {
+  width: 100%;
+  margin-bottom: -10px;
+}
+
+.projects-gallery {
+  padding-bottom: 3vh;
+}
+
+.list {
+  overflow-x: auto;
+}
+
+caption {
+  font-size: 2rem;
+  padding-bottom: 10px;
+}
+
+thead {
+  color: #bd871f;
+  background-color: #404040;
+}
+
+tr:nth-child(even) {
+  background-color: #404040;
+}
+
+th {
+  padding: 10px 5px;
+}
+
+td {
+  line-height: 1.8rem;
+  padding: 10px 5px;
+}
+
+tfoot {
+  background-color: #404040;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+/* =====================  OUR PROMISE PAGE - MOBILE  ===================== */
+
+.promise-text {
+  margin-top: 10vh;
+}
+/* =====================  CONTACT PAGE - MOBILE  ===================== */
+
+.contact h2 {
+margin-bottom: 2vh
+}
+
+/* ===============
+   BUTTONS
+   =============== */
+
+
+input[type="submit"] {
+  font-family: 'Mandali', sans-serif;
+  background-color: #292929;
+  font-size: 2.4rem;
+  line-height: 1rem;
+  color: #bd871f;
+  border: 2px solid #bd871f;
+  padding: 15px 30px;
+  margin-top: 20px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #00ab66;
+}
+
+/* ===============
+     STRUCTURE
+     =============== */
+
+.wrapper-form {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 10vh;
+}
+
+/* ===============
+     FORM CONTROLS
+     =============== */
+
+input,
+select,
+textarea {
+  font-size: 1em;
+  color: #b4aea7;
+  outline: none;
+}
+
+input[type="text"],
+select,
+textarea {
+  min-height: 20px;
+  width: 100%;
+  padding: 12px 0;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  background-color: #292929;
+  border: none;
+  border-bottom: 2px solid #b4aea7;
+}
+
+input[type="email"] {
+  width: 100%;
+  padding: 12px 0;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  background-color: #292929;
+  border: none;
+  border-bottom: 4px solid #b4aea7;
+}
+
+textarea {
+  font-family: sans-serif;
+}
+
+fieldset {
+  margin-bottom: 16px;
+  border: 1px solid red;
+}
+
+.label-required {
+  font-size: 0.8rem;
+  color: #B0815F;
+  display: none;
+}
+
+input:required {
+  border-bottom: 1px solid #B0815F;
 }
 
 /*  ***** START OF DESKTOP SECTIONS *****  */
@@ -434,7 +608,6 @@ footer img {
   .about img {
     width: 60%;
     margin: 0;
-
   }
 
   .body-links {
@@ -488,84 +661,3 @@ footer img {
     width: 50%;
   }
 }
-
-
-/* =====================  ABOUT PAGE - MOBILE  ===================== */
-
-.about-container {
-  display: flex;
-  flex-direction: column;
-  gap: 7vh;
-}
-
-.about-content-right {
-  display: flex;
-  flex-direction: column;
-  gap: 7vh;
-}
-
-.trade-links {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.trade-links img {
-  width: 20%;
-}
-
-/* =====================  PROJECTS PAGE - MOBILE  ===================== */
-
-
-.project-link {
-  margin-bottom: 7vh;
-}
-.projects img {
-  width: 100%;
-  margin-bottom: -10px;
-}
-
-.projects-gallery {
-  padding-bottom: 3vh;
-}
-
-.list {
-  overflow-x:auto;
-}
-
-caption {
-  font-size: 2rem;
-  padding-bottom: 10px;
-}
-
-thead {
-  color: #bd871f;
-  background-color: #404040;
-}
-
-tr:nth-child(even) {
-  background-color: #404040;
-}
-
-th {
-  padding: 10px 5px;
-}
-
-td {
-  line-height: 1.8rem;
-  padding: 10px 5px;
-}
-
-tfoot {
-  background-color: #404040;
-  font-size: 1.4rem;
-  text-align: center;
-}
-
-
-
-/* =====================  OUR PROMISE PAGE - MOBILE  ===================== */
-
-.promise-text {
-  margin-top: 7vh;
-}
-/* =====================  CONTACT PAGE - MOBILE  ===================== */
