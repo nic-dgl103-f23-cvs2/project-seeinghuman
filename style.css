@@ -245,7 +245,7 @@ header a.button {
 .about a:hover {
   color: #bd871f;
 }
-  /*  text-decoration: underline; *
+/*  text-decoration: underline; *
   font-weight: 400;
 }
 
@@ -399,25 +399,31 @@ tfoot {
 /* =====================  CONTACT PAGE - MOBILE  ===================== */
 
 .contact h2 {
-margin-bottom: 2vh
+  margin-bottom: 2vh;
+}
+
+.contact-title {
+  padding-bottom: 0;
+}
+
+.contact-container {
+  padding-top: 0;
+  padding-bottom: 10vh;
 }
 
 /* ===============
    BUTTONS
    =============== */
 
-
 input[type="submit"] {
-  font-family: 'Mandali', sans-serif;
-    background-color: #292929;
-    font-size: 2.4rem;
-    line-height: 1rem;
-    padding: 10px 0;
-    outline: none;
-    border: none;
-    cursor: pointer;
-    display: inline;
-    text-decoration: underline;
+  font-family: "Mandali", sans-serif;
+  background-color: #292929;
+  font-size: 2.4rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  display: inline;
+  text-decoration: underline;
 }
 
 input[type="submit"]:hover {
@@ -482,12 +488,12 @@ fieldset {
 
 .label-required {
   font-size: 0.8rem;
-  color: #B0815F;
+  color: #b0815f;
   display: none;
 }
 
 input:required {
-  border-bottom: 1px solid #B0815F;
+  border-bottom: 1px solid #b0815f;
 }
 
 /*  ***** START OF DESKTOP SECTIONS *****  */
@@ -605,18 +611,18 @@ input:required {
   .about img {
     width: 60%;
     margin: 0;
+    margin-right: 40px;
   }
 
   .body-links {
     justify-content: flex-end;
-    margin-left: 40px;
   }
 
   .about a {
     font-size: 3.5rem;
   }
 
-  /* ================  DESKTOP - CTA SECTION =================== */
+  /* ================  DESKTOP - HOME PAGE - CTA SECTION =================== */
 
   .cta .container {
     display: flex;
@@ -656,14 +662,66 @@ input:required {
     width: 50%;
   }
 
+  /* ================  DESKTOP - ABOUT PAGE =================== */
+
+  .about-content-top {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    position: relative;
+  }
+
+  .about h1.title {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .about-content-main {
+    display: flex;
+    gap: 10%;
+  }
+
+  .about-content-left {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .about-content-right {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 40%;
+    gap: 40px;
+  }
+
+  .about p {
+    line-height: 3.5rem;
+  }
+
+  .trade-links {
+    max-width: 100%;
+  }
+
+  .about .link {
+    width: 15%;
+  }
+
+  /* ================  DESKTOP - OUR PROMISE PAGE =================== */
+
+
+
   
-
-
   /* ================  DESKTOP - CONTACT PAGE =================== */
+
+  .contact-title {
+    padding-bottom: 0;
+  }
 
   .contact-container {
     display: flex;
     gap: 10%;
+    padding-top: 0;
   }
 
   .contact-info {
@@ -675,7 +733,13 @@ input:required {
     margin-top: 0;
   }
 
+  input,
+  select,
+  textarea {
+    font-size: 1.6em;
+  }
 
-
+  input[type="submit"] {
+    font-size: 3.5rem;
+  }
 }
-
