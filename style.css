@@ -127,7 +127,7 @@ a:hover {
     font-size: 2.4rem;
   }
 }
-/* ================  HEADER MOBILE SECTION =================== */
+/* ================  HEADER SECTION HOME PAGE MOBILE =================== */
 
 header {
   display: flex;
@@ -187,7 +187,7 @@ header a.button {
   display: none;
 }
 
-/*  ================    MAIN-MOBILE - HERO     ==================== */
+/*  ================    MAIN PAGE MOBILE - HERO     ==================== */
 
 .hero {
   display: flex;
@@ -241,17 +241,17 @@ header a.button {
   display: inline;
   text-decoration: underline;
 }
-/*
+
 .about a:hover {
   color: #bd871f;
+}
   /*  text-decoration: underline; *
   font-weight: 400;
 }
-*/
 
 .about h3 {
   line-height: 1rem;
-}
+} */
 
 /*  ================    MAIN-MOBILE - CTA     ==================== */
 
@@ -409,21 +409,19 @@ margin-bottom: 2vh
 
 input[type="submit"] {
   font-family: 'Mandali', sans-serif;
-  background-color: #292929;
-  font-size: 2.4rem;
-  line-height: 1rem;
-  color: #bd871f;
-  border: 2px solid #bd871f;
-  padding: 15px 30px;
-  margin-top: 20px;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  cursor: pointer;
+    background-color: #292929;
+    font-size: 2.4rem;
+    line-height: 1rem;
+    padding: 10px 0;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    display: inline;
+    text-decoration: underline;
 }
 
 input[type="submit"]:hover {
-  background-color: #00ab66;
+  color: #bd871f;
 }
 
 /* ===============
@@ -581,7 +579,6 @@ input:required {
   h2 {
     font-size: 6.5rem;
     line-height: 8rem;
-    width: 50%;
   }
 
   .features img {
@@ -638,8 +635,6 @@ input:required {
     padding: 30px 60px;
   }
 
-  /* ================  DESKTOP - FOTER SECTION =================== */
-
   .footer-content {
     display: flex;
     flex-direction: row;
@@ -660,4 +655,27 @@ input:required {
   .territory {
     width: 50%;
   }
+
+  
+
+
+  /* ================  DESKTOP - CONTACT PAGE =================== */
+
+  .contact-container {
+    display: flex;
+    gap: 10%;
+  }
+
+  .contact-info {
+    width: 40%;
+  }
+
+  .wrapper-form {
+    width: 50%;
+    margin-top: 0;
+  }
+
+
+
 }
+
