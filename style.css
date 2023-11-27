@@ -709,9 +709,20 @@ input:required {
 
   /* ================  DESKTOP - OUR PROMISE PAGE =================== */
 
+.promise h1.title {
+  width: 100%;
+}
+
+.promise-content {
+  display: flex;
+  gap: 20%;
+}
+.promise-text {
+  margin-top: 0;
+  flex: 0 0 40%;
+}
 
 
-  
   /* ================  DESKTOP - CONTACT PAGE =================== */
 
   .contact-title {
