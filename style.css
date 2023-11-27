@@ -163,10 +163,7 @@ nav ul {
   display: none;
 }
 
-/*
-nav ul li {
-  padding: 8px 0;
-} */
+/* sub menu? */
 
 nav ul li a {
   color: #b4aea7;
@@ -242,9 +239,6 @@ header a.button {
   text-decoration: underline;
 }
 
-.about a:hover {
-  color: #bd871f;
-}
 /*  text-decoration: underline; *
   font-weight: 400;
 }
@@ -329,6 +323,10 @@ footer img {
   gap: 7vh;
 }
 
+.about-content-left {
+  padding-bottom: 10vh;
+}
+
 .about-content-right {
   display: flex;
   flex-direction: column;
@@ -340,8 +338,8 @@ footer img {
   justify-content: space-evenly;
 }
 
-.trade-links img {
-  width: 20%;
+.trade-links a {
+  width: 16%;
 }
 
 /* =====================  PROJECTS PAGE - MOBILE  ===================== */
@@ -510,7 +508,7 @@ input:required {
   }
 
   .container {
-    padding: 12vh 0;
+    padding: 10vh 0;
   }
 
   a:hover {
@@ -703,25 +701,79 @@ input:required {
     max-width: 100%;
   }
 
-  .about .link {
-    width: 15%;
+  .icon-1 {
+    position: relative;
+    top: 10px;
+    left: 20px;
+  }
+
+  .icon-2 {
+    position: relative;
+    top: 7px;
+    left: 20px;
+  }
+
+  .icon-3 {
+    position: relative;
+    top: 15px;
+    left: 22px;
+  }
+
+  .icon-4 {
+    position: relative;
+    top: 10px;
+    left: 20px;
+  }
+
+  .about a {
+    width: 25%;
+  }
+
+  .about a:hover {
+    color: #bd871f;
+  }
+
+  /* ================  DESKTOP - PROJECTS PAGE =================== */
+
+.projects-gallery {
+  padding-bottom: 0;
+}
+
+.projects-list {
+  padding: 0 0 10vh 0;
+}
+
+  .project-link {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    position: relative;
+    margin-bottom: 10vh;
+  }
+
+  .project-link img {
+    width: 65%;
+  }
+
+  .project-link h2 {
+    position: absolute;
+    right: 5vw;
   }
 
   /* ================  DESKTOP - OUR PROMISE PAGE =================== */
 
-.promise h1.title {
-  width: 100%;
-}
+  .promise h1.title {
+    width: 100%;
+  }
 
-.promise-content {
-  display: flex;
-  gap: 20%;
-}
-.promise-text {
-  margin-top: 0;
-  flex: 0 0 40%;
-}
-
+  .promise-content {
+    display: flex;
+    gap: 20%;
+  }
+  .promise-text {
+    margin-top: 0;
+    flex: 0 0 40%;
+  }
 
   /* ================  DESKTOP - CONTACT PAGE =================== */
 
