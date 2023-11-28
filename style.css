@@ -404,6 +404,11 @@ tfoot {
   padding-bottom: 10vh;
 }
 
+address {
+  font-style: initial;
+  color: #b4aea7;
+}
+
 /* ===============
    BUTTONS
    =============== */
@@ -417,6 +422,8 @@ input[type="submit"] {
   cursor: pointer;
   display: inline;
   text-decoration: underline;
+  color: inherit;
+  margin-left: -5px;
 }
 
 input[type="submit"]:hover {
@@ -436,22 +443,21 @@ input[type="submit"]:hover {
 /* ===============
      FORM CONTROLS
      =============== */
-
+/*
 input,
-select,
 textarea {
   font-size: 1.6rem;
   color: #b4aea7;
   outline: none;
-}
+}*/
 
 input[type="text"],
-select,
+input[type="email"],
 textarea {
-  min-height: 20px;
+  font-size: 1.6rem;
+  font-family: 'Mandali', sans-serif;
   width: 100%;
-  padding: 8px 0;
-  margin-top: 6px;
+  padding: 6px 0 2px 0;
   margin-bottom: 16px;
   resize: vertical;
   background-color: #292929;
@@ -459,27 +465,8 @@ textarea {
   border-bottom: 2px solid #b4aea7;
 }
 
-input[type="email"] {
-  width: 100%;
-  padding: 12px 0;
-  margin-bottom: 20px;
-  resize: vertical;
-  background-color: #292929;
-  border: none;
-  border-bottom: 4px solid #b4aea7;
-}
-
 textarea {
-  font-family: sans-serif;
-}
-
-#message {
-  min-height: 20vh;
-}
-
-fieldset {
-  margin-bottom: 16px;
-  border: 1px solid red;
+  min-height: 150px;
 }
 
 .label-required {
@@ -797,12 +784,6 @@ input:required {
     display: flex;
     gap: 10%;
     padding-top: 0;
-  }
-
-  address {
-    all: initial;
-    color: #b4aea7;
-
   }
 
   .contact-info {
