@@ -440,7 +440,7 @@ input[type="submit"]:hover {
 input,
 select,
 textarea {
-  font-size: 1em;
+  font-size: 1.6rem;
   color: #b4aea7;
   outline: none;
 }
@@ -450,7 +450,7 @@ select,
 textarea {
   min-height: 20px;
   width: 100%;
-  padding: 12px 0;
+  padding: 8px 0;
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
@@ -462,8 +462,7 @@ textarea {
 input[type="email"] {
   width: 100%;
   padding: 12px 0;
-  margin-top: 6px;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
   resize: vertical;
   background-color: #292929;
   border: none;
@@ -472,6 +471,10 @@ input[type="email"] {
 
 textarea {
   font-family: sans-serif;
+}
+
+#message {
+  min-height: 20vh;
 }
 
 fieldset {
@@ -486,7 +489,7 @@ fieldset {
 }
 
 input:required {
-  border-bottom: 1px solid #b0815f;
+  border-bottom: 2px solid #b0815f;
 }
 
 /*  ***** START OF DESKTOP SECTIONS *****  */
@@ -735,7 +738,11 @@ input:required {
 
   .about iframe {
     width: 100%;
-    filter: grayscale(100%);
+    filter: grayscale(80%);
+  }
+
+  .about iframe:hover {
+    filter: none;
   }
 
   /* ================  DESKTOP - PROJECTS PAGE =================== */
@@ -790,6 +797,12 @@ input:required {
     display: flex;
     gap: 10%;
     padding-top: 0;
+  }
+
+  address {
+    all: initial;
+    color: #b4aea7;
+
   }
 
   .contact-info {
