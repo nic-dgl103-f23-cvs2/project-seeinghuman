@@ -106,6 +106,11 @@ a {
   list-style-type: none;
 }
 
+iframe {
+  width: 100%;
+  filter: grayscale(90%);
+}
+
 /* ============ GLOBAL CHANGES DESKTOP ==================== */
 @media only screen and (min-width: 1200px) {
   h1.title {
@@ -258,12 +263,12 @@ a.cta {
   margin-top: 50px;
 }
 
-/*
-.cta a:hover {
-  color: #bd871f;
-  border: 2px solid #b4aea7;
-  font-weight: 400;
-}*/
+/*  ================    MAIN-MOBILE - CONTACT     ==================== */
+
+.contact-map {
+  max-width: 90%;
+  padding-top: 0;
+}
 
 /*  ================    MAIN-MOBILE - FOOTER     ==================== */
 
@@ -442,13 +447,13 @@ input[type="submit"]:hover {
 /* ===============
      FORM CONTROLS
      =============== */
-/*
+
 input,
 textarea {
-  font-size: 1.6rem;
+  font-size: 2rem;
   color: #b4aea7;
   outline: none;
-}*/
+}
 
 input[type="text"],
 input[type="email"],
@@ -732,11 +737,12 @@ input:required {
   .about a:hover {
     color: #bd871f;
   }
-
+  /*
   .about iframe {
     width: 100%;
     filter: grayscale(80%);
   }
+  */
 
   .about iframe:hover {
     filter: none;
@@ -785,6 +791,10 @@ input:required {
   }
 
   /* ================  DESKTOP - CONTACT PAGE =================== */
+
+  .contact-map {
+    padding-top: 0;
+  }
 
   .contact-title {
     padding-bottom: 0;
