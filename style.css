@@ -132,7 +132,6 @@ header {
   background-color: rgba(41, 41, 41, 0.8);
   z-index: 20;
   box-shadow: rgba(100, 100, 111, 0.15) 0px 7px 29px 0px;
-
 }
 
 header img {
@@ -454,8 +453,7 @@ textarea {
 input[type="text"],
 input[type="email"],
 textarea {
-  font-size: 1.6rem;
-  font-family: 'Mandali', sans-serif;
+  font-family: "Mandali", sans-serif;
   width: 100%;
   padding: 6px 0 2px 0;
   margin-bottom: 16px;
@@ -469,14 +467,21 @@ textarea {
   min-height: 150px;
 }
 
+.label {
+  font-size: 2.4rem;
+}
+
 .label-required {
-  font-size: 0.8rem;
+  font-size: 1.4rem;
   color: #b0815f;
-  display: none;
 }
 
 input:required {
   border-bottom: 2px solid #b0815f;
+}
+
+.wrapper-form {
+  font-size: 2rem;
 }
 
 /*  ***** START OF DESKTOP SECTIONS *****  */
@@ -498,7 +503,7 @@ input:required {
 
   a:hover {
     color: #bd871f;
-    /* text-decoration: underline; */
+    text-decoration: underline;
     font-weight: 400;
   }
 
@@ -517,6 +522,11 @@ input:required {
   footer a:hover {
     color: #bd871f;
     font-weight: 400;
+  }
+
+  a.active {
+    font-weight: 600;
+    text-decoration: underline;
   }
 
   /* ================  DESKTOP - HEADER SECTION =================== */
@@ -647,9 +657,9 @@ input:required {
 
   /* ================  DESKTOP - ABOUT PAGE =================== */
 
-.about-container {
-  padding-top: 25vh;
-}
+  .about-container {
+    padding-top: 25vh;
+  }
 
   .about-content-top {
     display: flex;
@@ -734,13 +744,13 @@ input:required {
 
   /* ================  DESKTOP - PROJECTS PAGE =================== */
 
-.projects-gallery {
-  padding-bottom: 0;
-}
+  .projects-gallery {
+    padding-bottom: 0;
+  }
 
-.projects-list {
-  padding: 0 0 10vh 0;
-}
+  .projects-list {
+    padding: 0 0 10vh 0;
+  }
 
   .project-link {
     display: flex;
@@ -793,12 +803,17 @@ input:required {
   .wrapper-form {
     width: 50%;
     margin-top: 0;
+    font-size: 2.4rem;
   }
 
   input,
   select,
   textarea {
-    font-size: 1.6em;
+    font-size: 2.4rem;
+  }
+
+  textarea {
+    min-height: 230px;
   }
 
   input[type="submit"] {
