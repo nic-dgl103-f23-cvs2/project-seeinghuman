@@ -96,6 +96,9 @@ a {
   text-decoration: none;
   margin: 0;
   font-size: 1.8rem;
+  transition-property: color;
+  transition-duration: 0.4s;
+  transition-timing-function: ease-in;
 }
 
 .body-links {
@@ -260,7 +263,15 @@ a.cta {
   color: #bd871f;
   border: 2px solid #bd871f;
   padding: 20px 33px;
-  margin-top: 50px;
+}
+
+.cta-wrapper {
+  display: flex;
+  max-width: 90%;
+  padding-top: 0;
+  align-items: center;
+  margin: 0 auto;
+  padding-bottom: 10vh;
 }
 
 /*  ================    MAIN-MOBILE - CONTACT     ==================== */
@@ -268,6 +279,10 @@ a.cta {
 .contact-map {
   max-width: 90%;
   padding-top: 0;
+}
+
+.contact-info a {
+  text-decoration: underline;
 }
 
 /*  ================    MAIN-MOBILE - FOOTER     ==================== */
@@ -281,18 +296,6 @@ footer ul {
   padding: 0;
   margin: 0;
 }
-/*
-footer a {
-  text-transform: initial;
-  text-decoration: underline;
-} */
-
-/*
-footer a:hover {
-  color: #bd871f;
-  font-weight: 400;
-}
-*/
 
 footer a {
   line-height: 1rem;
@@ -337,7 +340,7 @@ footer img {
   justify-content: space-evenly;
 }
 
-.trade-links a {
+.trade-icon {
   width: 16%;
 }
 
@@ -392,6 +395,10 @@ tfoot {
 
 .promise-text {
   margin-top: 10vh;
+}
+
+.promise-heading .cta-wrapper {
+  display: none;
 }
 /* =====================  CONTACT PAGE - MOBILE  ===================== */
 
@@ -518,12 +525,6 @@ input:required {
     font-weight: 400;
   }
 
-  .cta a:hover {
-    color: #bd871f;
-    border: 2px solid #b4aea7;
-    font-weight: 400;
-  }
-
   footer a:hover {
     color: #bd871f;
     font-weight: 400;
@@ -637,6 +638,16 @@ input:required {
   a.cta {
     font-size: 3.5rem;
     padding: 30px 60px;
+    text-decoration: none;
+    transition-property: border, color, background-color;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in-out;
+  }
+
+  a.cta:hover {
+    color: #292929;
+    background-color: #bd871f;
+    border: 2px solid #b4aea7;
   }
 
   .footer-content {
@@ -698,6 +709,11 @@ input:required {
     gap: 40px;
   }
 
+  .about-content-bottom {
+    align-items: flex-start;
+    padding-bottom: 0;
+  }
+
   .about p {
     line-height: 3.5rem;
   }
@@ -730,7 +746,7 @@ input:required {
     left: 20px;
   }
 
-  .about a {
+  .trade-icon {
     width: 25%;
   }
 
@@ -746,6 +762,10 @@ input:required {
 
   .about iframe:hover {
     filter: none;
+  }
+
+  .about .cta-wrapper {
+    padding: 7vh 0 0 0;
   }
 
   /* ================  DESKTOP - PROJECTS PAGE =================== */
@@ -775,7 +795,28 @@ input:required {
     right: 5vw;
   }
 
+  table {
+    width: 100%;
+    font-size: 2rem;
+  }
+
+  caption {
+    font-size: 2.4rem;
+  }
+
+  td {
+    padding: 14px 5px;
+  }
+
   /* ================  DESKTOP - OUR PROMISE PAGE =================== */
+
+  .promise .cta-wrapper {
+    display: none;
+  }
+
+  .promise-heading .cta-wrapper {
+    display: flex;
+  }
 
   .promise h1.title {
     width: 100%;
@@ -804,9 +845,10 @@ input:required {
     display: flex;
     gap: 10%;
     padding-top: 0;
+    padding-bottom: 0;
   }
 
-  .contact-info {
+  .address-wrapper {
     width: 40%;
   }
 
