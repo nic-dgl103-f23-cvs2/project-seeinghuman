@@ -306,7 +306,7 @@ a.cta {
 
 .contact-map {
   max-width: 90%;
-  padding-top: 0;
+  padding-top: 10vh;
 }
 
 .contact-info a {
@@ -501,9 +501,16 @@ tfoot {
 
 .contact-container {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   padding-top: 0;
-  padding-bottom: 10vh;
+  padding-bottom: 7vh;
+}
+
+.contact-divider {
+  height: 10px;
+  border-bottom: 3px solid #bd871f;
+  width: 50%;
+  padding-top: 7vh;
 }
 
 address {
@@ -579,12 +586,9 @@ textarea {
   color: #b0815f;
 }
 
-input:required {
-  border-bottom: 2px solid #b0815f;
-}
-
 .wrapper-form {
   font-size: 2rem;
+  margin-top: 7vh;
 }
 
 /*  ***** START OF DESKTOP SECTIONS *****  */
@@ -968,6 +972,7 @@ input:required {
 
   .contact-container {
     display: flex;
+    flex-direction: row;
     gap: 30px;
     padding-top: 0;
     padding-bottom: 7vh;
@@ -977,8 +982,12 @@ input:required {
     width: 40%;
   }
 
+  .contact-divider {
+    display: none;
+  }
+
   .wrapper-form {
-    width: 50%;
+    width: 40%;
     margin-top: 0;
     font-size: 2.4rem;
   }
