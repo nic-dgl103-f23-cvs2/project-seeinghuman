@@ -232,13 +232,13 @@ a.active {
 
 /*  ================    MAIN-MOBILE - ABOUT     ==================== */
 
-.about {
+.home-about {
   background-image: url(images/layer-map-with-icons.jpg);
   background-size: cover;
   z-index: -10;
 }
 
-.about-overlay {
+.home-about-overlay {
   background-color: #292929ba;
   position: absolute;
   top: 0;
@@ -252,7 +252,7 @@ a.active {
   padding-bottom: 0;
 }
 
-.about img {
+.home-about img {
   width: 100%;
 }
 
@@ -792,7 +792,7 @@ input:required {
 
   .about-content-bottom {
     align-items: flex-start;
-    padding-bottom: 0;
+    padding: 0;
   }
 
   .about p {
