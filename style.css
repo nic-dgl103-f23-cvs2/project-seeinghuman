@@ -233,8 +233,19 @@ a.active {
 /*  ================    MAIN-MOBILE - ABOUT     ==================== */
 
 .about {
-  background-image: url(images/empty-map-dark.png);
+  background-image: url(images/layer-map-with-icons.jpg);
   background-size: cover;
+  z-index: -10;
+}
+
+.about-overlay {
+  background-color: #292929ba;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -5;
 }
 
 .about-1 {
@@ -377,7 +388,7 @@ footer img {
   position: relative;
 }
 
-.projects h2 {
+h2.project-link-title {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -386,7 +397,7 @@ footer img {
   padding: 5px 10px 5px 20px;
 }
 
-.projects h2.short-title {
+.short-title {
   width: 72vw;
 }
 
@@ -408,13 +419,8 @@ footer img {
 }
 
 .plus-sign img {
-  width: 14%;
-  height: 14%;
-  color: red;
-}
-
-.plus {
-  color: red;
+  width: 50px;
+  height: 50px;
 }
 
 .list {
@@ -423,7 +429,7 @@ footer img {
 
 caption {
   font-family: "Poppins", sans-serif;
-  font-size: 3.6rem;
+  font-size: 3.2rem;
   text-align: left;
   padding-bottom: 20px;
 }
@@ -450,6 +456,24 @@ tfoot {
   background-color: #404040;
   font-size: 1.4rem;
   text-align: center;
+}
+
+.projects-map {
+  padding: 7vh 0;
+}
+
+.projects-section-title {
+  padding-bottom: 40px;
+}
+
+.projects-map iframe {
+  filter: grayscale(100%);
+  border: none;
+  padding-top: 3px;
+}
+
+.projects-map iframe:hover {
+  filter: none;
 }
 
 /* =====================  OUR PROMISE PAGE - MOBILE  ===================== */
@@ -834,7 +858,7 @@ input:required {
   .cta-wrapper {
     display: flex;
     justify-content: left;
-    padding-top: 3vh;
+    padding-top: 0;
     padding-bottom: 10vh;
   }
 
@@ -842,6 +866,11 @@ input:required {
 
   .projects-gallery {
     padding-bottom: 0;
+  }
+
+  .plus-sign img {
+    width: 100px;
+    height: 100px;
   }
 
   .projects-list {
@@ -861,13 +890,15 @@ input:required {
     object-fit: cover;
   }
 
-  .project-link h2 {
+  h2.project-link-title {
     position: absolute;
     max-width: 50%;
     left: 450px;
     background-color: #292929c9;
     padding: 5px 10px 5px 20px;
   }
+
+  /* UNABLE TO TARGET COLOR OR HOVER COLOR ON '+'
 
   .plus-sign img {
     width: 6%;
@@ -879,6 +910,7 @@ input:required {
   .cls-1:hover {
     fill: #bd871f;
   }
+  */
 
   table {
     width: 100%;
@@ -887,12 +919,16 @@ input:required {
 
   caption {
     font-family: "Poppins", sans-serif;
-    font-size: 8rem;
+    font-size: 6.5rem;
     padding-bottom: 40px;
   }
 
   td {
     padding: 14px 5px;
+  }
+
+  .projects-map {
+    padding: 7vh 0;
   }
 
   /* ================  DESKTOP - OUR PROMISE PAGE =================== */
