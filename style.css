@@ -232,6 +232,11 @@ a.active {
 
 /*  ================    MAIN-MOBILE - ABOUT     ==================== */
 
+.about {
+  background-image: url(images/empty-map-dark.png);
+  background-size: cover;
+}
+
 .about-1 {
   padding-bottom: 0;
 }
@@ -636,6 +641,7 @@ input:required {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    z-index: 1;
   }
 
   h2 {
