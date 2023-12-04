@@ -118,7 +118,7 @@ iframe {
 /* ============ GLOBAL CHANGES DESKTOP ==================== */
 @media only screen and (min-width: 1200px) {
   h1.title {
-    font-size: 13rem;
+    font-size: 17rem;
   }
 
   h3 {
@@ -127,6 +127,7 @@ iframe {
 
   P {
     font-size: 2.4rem;
+    line-height: 3.6rem;
   }
 }
 /* ================  HEADER SECTION HOME PAGE MOBILE =================== */
@@ -234,36 +235,31 @@ a.active {
 /*  ================    MAIN-MOBILE - ABOUT     ==================== */
 
 .home-about {
-  background-image: url(images/layer-map-with-icons.jpg);
+  background-image: url(images/map-with-icons-70%.jpg);
   background-size: cover;
-  z-index: -10;
-}
-
-.home-about-overlay {
-  background-color: #292929ba;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -5;
 }
 
 .about-1 {
   padding-bottom: 0;
+  z-index: 10;
+}
+
+.about-2 {
+  z-index: 10;
 }
 
 .home-about img {
   width: 100%;
 }
 
-.about a {
+.home-about a {
   font-size: 2.4rem;
   display: inline;
   text-decoration: underline;
+  z-index: 100;
 }
 
-.about a.cta {
+.home-about a.cta {
   text-decoration: none;
   margin-bottom: 10vh;
 }
@@ -647,12 +643,6 @@ textarea {
     font-weight: 400;
   }
 
-  .about a:hover {
-    color: #bd871f;
-    /*  text-decoration: underline; */
-    font-weight: 400;
-  }
-
   footer a:hover {
     color: #bd871f;
     font-weight: 400;
@@ -745,6 +735,12 @@ textarea {
     font-size: 3.5rem;
   }
 
+  .home-about a:hover {
+    color: #bd871f;
+    /*  text-decoration: underline; */
+    font-weight: 400;
+  }
+
   /* ================  DESKTOP - HOME PAGE - CTA SECTION =================== */
 
   .cta .container {
@@ -791,23 +787,25 @@ textarea {
 
   /* ================  DESKTOP - ABOUT PAGE =================== */
 
-  /*
   .about-container {
     padding-top: 15vh;
   }
 
   .about-content-top {
     display: flex;
-    align-items: center;
-    justify-content: right;
-    position: relative;
+    justify-content: flex-end;
     margin-bottom: 3vh;
+    max-width: 100%;
+    margin-top: 60px;
   }
 
-  .about h1.title {
-    position: absolute;
-    left: 0;
-    top: 0;
+  .about-us h1.title {
+    white-space: nowrap;
+    transform: translate(272px, -38px);
+  }
+
+  .about-us img {
+    width: 690px;
   }
 
   .about-content-main {
@@ -831,10 +829,6 @@ textarea {
   .about-content-bottom {
     align-items: flex-start;
     padding: 0;
-  }
-
-  .about p {
-    line-height: 3.5rem;
   }
 
   .trade-links {
@@ -864,16 +858,16 @@ textarea {
     top: 10px;
     left: 20px;
   }
-  
+
   .trade-icon {
     width: 25%;
   }
 
-  .home-about a.cta {
+  .about-us a.cta {
     margin-bottom: 0;
   }
 
-  .home-about a:hover {
+  .about-us a:hover {
     color: #bd871f;
   }
 
@@ -883,7 +877,6 @@ textarea {
     border: 2px solid #bd871f;
   }
 
-  */
   /*  THIS WAS OFF
   .about iframe {
     width: 100%;
@@ -891,8 +884,7 @@ textarea {
   }
   */
 
-  /*
-  .home-about iframe:hover {
+  .about-us iframe:hover {
     filter: none;
   }
 
@@ -902,8 +894,6 @@ textarea {
     padding-top: 0;
     padding-bottom: 10vh;
   }
-
-  */
 
   /* ================  DESKTOP - PROJECTS PAGE =================== */
 
