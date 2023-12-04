@@ -46,9 +46,10 @@ section {
   width: 50%;
 }
 .container {
-  max-width: 90%;
+  /* max-width: 90%; */
   margin: 0 auto;
-  padding: 10vh 0;
+  /* padding: 10vh 0; */
+  padding: 10vh 20px;
 }
 
 h1,
@@ -64,7 +65,7 @@ h1 {
   font-size: 4.5rem;
   line-height: 5.5rem;
   letter-spacing: 0.1rem;
-  position: -webkit-sticky;
+  /* position: -webkit-sticky; */
   position: sticky;
   top: 9vh;
   margin-bottom: -10vh;
@@ -178,7 +179,7 @@ nav ul li a {
 
 nav .fa {
   font-size: 2.4rem;
-  color: b4aea7;
+  color: #b4aea7;
   margin-top: 2.8vh;
 }
 
@@ -347,11 +348,24 @@ footer img {
 
 /* =====================  ABOUT PAGE - MOBILE  ===================== */
 
+.about-us {
+  max-width: 100%;
+}
+
+.about-content-top img {
+  width: 300px;
+}
+
 .about-container {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 7vh;
   padding-bottom: 0;
+}
+
+.about-content-top {
+  /* display: flex; */
 }
 
 .about-content-left {
@@ -364,21 +378,40 @@ footer img {
   gap: 7vh;
 }
 
+.trade-links {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.trade-icon .link {
+  /* width: 16%; */
+  width: 60px;
+  height: 60px;
+}
+
+.about-content-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+}
+
+.about-content-bottom .cta {
+  margin-top: 7vh;
+}
+/*
+
 .about-content-bottom {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 7vh;
   padding-bottom: 0;
+  margin: 0;
 }
-
-.trade-links {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.trade-icon {
-  width: 16%;
+*/
+.about-us .cta {
+  margin-bottom: 10vh;
 }
 
 /* =====================  PROJECTS PAGE - MOBILE  ===================== */
@@ -698,7 +731,7 @@ textarea {
     padding-top: 0;
   }
 
-  .about img {
+  .home-about img {
     width: 60%;
     margin: 0;
     margin-right: 40px;
@@ -708,7 +741,7 @@ textarea {
     justify-content: flex-end;
   }
 
-  .about a {
+  .home-about a {
     font-size: 3.5rem;
   }
 
@@ -758,6 +791,7 @@ textarea {
 
   /* ================  DESKTOP - ABOUT PAGE =================== */
 
+  /*
   .about-container {
     padding-top: 15vh;
   }
@@ -830,16 +864,16 @@ textarea {
     top: 10px;
     left: 20px;
   }
-
+  
   .trade-icon {
     width: 25%;
   }
 
-  .about a.cta {
+  .home-about a.cta {
     margin-bottom: 0;
   }
 
-  .about a:hover {
+  .home-about a:hover {
     color: #bd871f;
   }
 
@@ -848,14 +882,17 @@ textarea {
     background-color: #bd871f;
     border: 2px solid #bd871f;
   }
-  /*
+
+  */
+  /*  THIS WAS OFF
   .about iframe {
     width: 100%;
     filter: grayscale(80%);
   }
   */
 
-  .about iframe:hover {
+  /*
+  .home-about iframe:hover {
     filter: none;
   }
 
@@ -865,6 +902,8 @@ textarea {
     padding-top: 0;
     padding-bottom: 10vh;
   }
+
+  */
 
   /* ================  DESKTOP - PROJECTS PAGE =================== */
 
@@ -933,6 +972,10 @@ textarea {
 
   .projects-map {
     padding: 7vh 0;
+  }
+
+  .projects-map iframe {
+    height: 600px;
   }
 
   /* ================  DESKTOP - OUR PROMISE PAGE =================== */
