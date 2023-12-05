@@ -649,6 +649,14 @@ textarea {
     width: 100%;
   }
 
+  section.hero {
+    padding-top: 0;
+  }
+
+  section:first-of-type {
+    padding-top: 30px;
+  }
+
   .divider {
     width: 33%;
   }
@@ -756,7 +764,7 @@ textarea {
     justify-content: flex-end;
   }
 
-  .home-about a {
+  .about-us a {
     font-size: 3.5rem;
   }
 
