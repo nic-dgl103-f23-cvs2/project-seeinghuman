@@ -112,7 +112,7 @@ a {
 
 iframe {
   width: 100%;
-  filter: grayscale(90%);
+  filter: grayscale(100%);
 }
 
 /* ============ GLOBAL CHANGES DESKTOP ==================== */
@@ -145,8 +145,8 @@ header {
 }
 
 header img {
-  width: 15vh;
-  margin-left: 3vw;
+  width: 60px;
+  margin: 10px 0 0px 20px;
 }
 
 .top-nav {
@@ -181,7 +181,7 @@ nav ul li a {
 nav .fa {
   font-size: 2.4rem;
   color: #b4aea7;
-  margin-top: 2.8vh;
+  margin-top: 12px;
 }
 
 header a.button {
@@ -444,8 +444,8 @@ h2.project-link-title {
 
 .plus-sign {
   text-align: center;
-  padding-top: 5vh;
-  padding-bottom: 10vh;
+  padding-top: 0;
+  padding-bottom: 7vh;
 }
 
 .plus-icon {
@@ -668,6 +668,10 @@ textarea {
     font-weight: 400;
   }
 
+  iframe:hover {
+    filter: none;
+  }
+
   /* ================  DESKTOP - HEADER SECTION =================== */
 
   header {
@@ -676,7 +680,8 @@ textarea {
   }
 
   header img {
-    margin-left: 3%;
+    width: 120px;
+    margin: 20px 0 10px 40px;
   }
 
   .top-nav {
@@ -807,10 +812,6 @@ textarea {
 
   /* ================  DESKTOP - ABOUT PAGE =================== */
 
-  .about-container {
-    padding-top: 15vh;
-  }
-
   .about-content-top {
     display: flex;
     justify-content: flex-end;
@@ -895,17 +896,6 @@ textarea {
     color: #292929;
     background-color: #bd871f;
     border: 2px solid #bd871f;
-  }
-
-  /*  THIS WAS OFF
-  .about iframe {
-    width: 100%;
-    filter: grayscale(80%);
-  }
-  */
-
-  .about-us iframe:hover {
-    filter: none;
   }
 
   .cta-wrapper {
