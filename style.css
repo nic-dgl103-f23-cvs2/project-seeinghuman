@@ -11,6 +11,7 @@ font-family: 'Mandali', sans-serif;
 /*-------- GLOBAL STYLES ---------*/
 html {
   font-size: 62.5%;
+  cursor: pointer;
 }
 
 /* Used to discover why I had Horizontal scrolling on mobile view.
@@ -67,7 +68,7 @@ h1 {
   letter-spacing: 0.1rem;
   /* position: -webkit-sticky; */
   position: sticky;
-  top: 9vh;
+  top: 50px;
   margin-bottom: -10vh;
 }
 
@@ -384,6 +385,10 @@ footer img {
   /* width: 16%; */
   width: 60px;
   height: 60px;
+}
+
+a.trade-icon {
+  border-bottom: none;
 }
 
 .about-content-bottom {
@@ -727,6 +732,7 @@ textarea {
     width: 80%;
     font-size: 9.8rem;
     line-height: 12rem;
+    top: 100px;
   }
 
   /* ================  DESKTOP - FEATURES SECTION =================== */
