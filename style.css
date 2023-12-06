@@ -11,7 +11,6 @@ font-family: 'Mandali', sans-serif;
 /*-------- GLOBAL STYLES ---------*/
 html {
   font-size: 62.5%;
-  cursor: pointer;
 }
 
 /* Used to discover why I had Horizontal scrolling on mobile view.
@@ -199,7 +198,7 @@ a.active {
 
 .hero {
   display: flex;
-  background-image: url("images/Dunlop Main Dark.jpg");
+  background-image: url("images/Dunlop-Main-Dark.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
