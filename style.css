@@ -224,6 +224,7 @@ a.active {
 .hero .container {
   display: flex;
   align-items: center;
+  padding-top: 0;
 }
 
 /*  ================    MAIN-MOBILE - FEATURES     ==================== */
@@ -664,9 +665,6 @@ textarea {
     font-size: 2rem;
     line-height: 3.5rem;
   }
-  section.hero {
-    padding-top: 0;
-  }
 
   section:first-of-type {
     padding-top: 30px;
@@ -732,7 +730,8 @@ textarea {
     width: 80%;
     font-size: 9.8rem;
     line-height: 12rem;
-    top: 100px;
+    top: 90px;
+    margin-bottom: -8vh;
   }
 
   /* ================  DESKTOP - FEATURES SECTION =================== */
