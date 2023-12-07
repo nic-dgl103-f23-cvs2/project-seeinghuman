@@ -1071,6 +1071,10 @@ textarea {
     min-height: 230px;
   }
 
+  #message:hover {
+    background-color: #424242;
+  }
+
   input[type="submit"] {
     font-size: 4rem;
   }
