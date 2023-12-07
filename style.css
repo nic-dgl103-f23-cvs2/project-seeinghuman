@@ -112,6 +112,7 @@ a {
 
 iframe {
   width: 100%;
+  border: none;
   filter: grayscale(100%);
 }
 
@@ -305,10 +306,6 @@ a.cta {
 .contact-map {
   max-width: 90%;
   padding-top: 10vh;
-}
-
-.contact-info .email-link {
-  border-bottom: 2px solid #bd871f;
 }
 
 /*  ================    MAIN-MOBILE - FOOTER     ==================== */
@@ -569,9 +566,17 @@ tfoot {
   padding-top: 7vh;
 }
 
-address {
+address p,
+address a {
+  font-family: "Poppins";
   font-style: initial;
-  color: #b4aea7;
+  font-size: 2.4rem;
+  line-height: 3rem;
+  margin-bottom: -10px;
+}
+
+.email-link {
+  border-bottom: 2px solid #bd871f;
 }
 
 /* ===============
@@ -581,7 +586,7 @@ address {
 input[type="submit"] {
   font-family: "Mandali", sans-serif;
   background-color: #292929;
-  font-size: 2.4rem;
+  font-size: 3rem;
   outline: none;
   border: none;
   cursor: pointer;
@@ -1035,6 +1040,17 @@ textarea {
     width: 44%;
   }
 
+  .contact-info {
+    margin-top: -30px;
+  }
+
+  address p,
+  address a {
+    font-size: 3.6rem;
+    line-height: 5.2rem;
+    margin-bottom: -20px;
+  }
+
   .contact-divider {
     display: none;
   }
@@ -1056,6 +1072,6 @@ textarea {
   }
 
   input[type="submit"] {
-    font-size: 3.5rem;
+    font-size: 4rem;
   }
 }
