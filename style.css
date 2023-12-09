@@ -376,6 +376,7 @@ footer img {
 .trade-links {
   display: flex;
   justify-content: space-evenly;
+  gap: 20px;
 }
 
 .trade-icon .link {
@@ -385,7 +386,7 @@ footer img {
 }
 
 a.trade-icon {
-  border-bottom: none;
+  border-bottom: 3px solid #bd871f;
 }
 
 .about-content-bottom {
@@ -882,6 +883,11 @@ textarea {
 
   .trade-links {
     max-width: 100%;
+  }
+
+  .trade-icon:hover {
+    border-top: #bd871f;
+    filter: opacity(20%);
   }
 
   .icon-1 {
