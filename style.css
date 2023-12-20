@@ -238,7 +238,7 @@ a.active {
 /*  ================    MAIN-MOBILE - ABOUT     ==================== */
 
 .home-about {
-  background-image: url(images/map-with-icons-70%.jpg);
+  background-image: url("images/map-with-icons-70%.jpg");
   background-size: cover;
 }
 
