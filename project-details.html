@@ -19,14 +19,17 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <title>PhiArchitecture ReDesign Projects Gallery Page</title>
+    <title>PhiArchitecture ReDesign Our Commitment Page</title>
     <!-- DGL 103 CVS1 - darryl snaychuk - Website reDesign Project -->
   </head>
 
   <body>
     <header>
       <a href="index.html">
-        <img src="images/PHI-Logo-full-white.svg" alt="Logo" />
+        <img
+          src="images/PHI-text-logo.svg"
+          alt="Phillipa Atwood Arcitect company Logo"
+        />
       </a>
       <nav class="navbar top-nav">
         <a class="toggle" onclick="showNav()"
@@ -36,7 +39,9 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a class="active" href="projects.html">Projects</a></li>
-          <li><a href="our-promise.html">Our Promise</a></li>
+          <li>
+            <a href="our-promise.html">Our Promise</a>
+          </li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
@@ -49,106 +54,48 @@
       }
     </script>
 
-    <section class="projects">
-      <div class="container projects-gallery">
-        <h1 class="title" class_title>Gallery</h1>
-
-        <div class="project-link">
-          <a href="#project01"> <img src="images/169751.jpg" alt="" /></a>
-          <h2>Project Name.</h2>
-        </div>
-
-        <div class="project-link">
-          <a href="#project01"> <img src="images/169751.jpg" alt="" /></a>
-          <h2>Project Name.</h2>
-        </div>
-
-        <div class="project-link">
-          <a href="#project01"> <img src="images/169751.jpg" alt="" /></a>
-          <h2>Project Name.</h2>
-        </div>
-
-        <div class="project-link">
-          <a href="#project01"> <img src="images/169751.jpg" alt="" /></a>
-          <h2>Project Name.</h2>
-        </div>
-
-        <div class="project-link">
-          <a href="#project01"> <img src="images/169751.jpg" alt="" /></a>
-          <h2>Project Name.</h2>
-        </div>
-
-        <div class="project-link">
-          <a href="#project01"> <img src="images/169751.jpg" alt="" /></a>
-          <h2>Project Name.</h2>
-        </div>
+    <section class="hero">
+      <div class="container hero-container">
+        <h1>Comox Valley Child Autism Centre</h1>
       </div>
+    </section>
 
-      <!-- IDEA FOR PROJECTS PAGE: SUB-PAGES OF GALLERY AND HISTORY
-    sub menu
-    breadcrumb ::before H1.title of "projects >"
+    <section class="promise">
+      <div class="container promise-container">
+        <!--   <h1 class="title">Sample Project Page</h1> -->
 
-    - was just starting to play with idea, and wrote the below as a reminder.
-
-     <div class="projects-gallery">
-            <div class="project-link">
-                <img src="" alt="">
-                <h3>Project Name.</h3>
+        <div class="promise-content">
+          <div class="promise-heading">
+            <h3>New Zealand's first certified Passive House Plus office.</h3>
+            <div class="container cta-wrapper">
+              <a class="cta" href="contact.html">Contact us</a>
             </div>
--->
-
-      <div class="container list">
-        <table>
-          <caption>
-            Projects List
-          </caption>
-          <thead>
-            <tr>
-              <th>Project Name</th>
-              <th>Location</th>
-              <th>Category</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Comox Valley Child Autism Centre</td>
-              <td>Courtenay</td>
-              <td>Daycare and Schools</td>
-            </tr>
-            <tr>
-              <td>CMcElhanney Offices</td>
-              <td>Courtenay</td>
-              <td>Commercial</td>
-            </tr>
-            <tr>
-              <td>Chalet, Mt Washington</td>
-              <td>Courtenay</td>
-              <td>Residential</td>
-            </tr>
-            <tr>
-              <td>The Victory</td>
-              <td>Cumberland</td>
-              <td>Commercial Residential</td>
-            </tr>
-            <tr>
-              <td>Denman Island Childcare</td>
-              <td>Denman Island</td>
-              <td>Daycare and Schools</td>
-            </tr>
-          </tbody>
-          <tfoot>
-            <tr>
-              <td colspan="3">All data current as of Nov 24, 2023</td>
-            </tr>
-          </tfoot>
-        </table>
+          </div>
+          <div class="promise-text">
+            <p>
+              The Hub is the center of activity for Dunlop Builders. Essentially
+              an ‘architectural shed’, the office and workshop space reflects
+              who we are as a company and fits with our commitment to mastery,
+              home and community. It combines exceptional architecture with
+              sustainable design principles and the office space has achieved
+              Passive House Plus certification.
+            </p>
+            <p>
+              Full details of the materials, construction and design elements
+              can be found here.
+            </p>
+            <p>Architect PAC Studio.</p>
+            <p>Passive House Consultant VIA Architecture.</p>
+            <p>Photos Mickey Ross & Chris Lea</p>
+          </div>
+        </div>
       </div>
-
-      <!-- 
-        <p>If you want only the table to scroll then you have to add a container element with overflow-x:auto around the table.</p>
-    -->
-
-      <div class="divider"></div>
+      <div class="container cta-wrapper">
+        <a class="cta" href="contact.html">Contact us</a>
+      </div>
+      <div class="divider-wrapper">
+        <div class="divider"></div>
+      </div>
     </section>
 
     <footer>
@@ -156,22 +103,26 @@
         <div class="footer-content">
           <ul>
             <li>
-              <a class="active" href="#home">Home</a>
+              <a href="index.html">Home</a>
             </li>
             <li>
-              <a href="#about">About</a>
+              <a href="about.html">About</a>
             </li>
             <li>
-              <a href="#projects">Projects</a>
+              <a href="projects.html">Projects</a>
             </li>
             <li>
-              <a href="our-promise.html">Our Promise</a>
+              <a class="active" href="our-promise.html">Our Promise</a>
             </li>
             <li>
-              <a href="#contact">Contact</a>
+              <a href="contact.html">Contact</a>
             </li>
           </ul>
-          <img src="images/PHI-Logo-full-text-color.svg" alt="Logo" />
+          <a href="index.html">
+            <img
+              src="images/PHI-Logo-full-text-color.svg"
+              alt="Company logo for Phillipa Atwood Architects"
+          /></a>
         </div>
         <div class="copyright">
           <p>Copyright © 2023 Phi Architecture Inc</p>
@@ -181,6 +132,12 @@
             K’ómoks Nation.
           </p>
           <p>Website in collaboration with seeinghuman.</p>
+          <p>
+            “This is a fictional website that was designed and coded as an
+            educational exercise. It is not intended to be seen outside of the
+            class environment. None of the content and images were approved by
+            the business owner.”
+          </p>
         </div>
       </div>
     </footer>
