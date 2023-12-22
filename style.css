@@ -199,12 +199,27 @@ a.active {
 
 .hero {
   display: flex;
-  background-image: url("images/Dunlop-Main-Dark.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100svh;
 }
+
+.home-hero {
+  background-image: url("images/Dunlop-Main-Dark.jpg");
+}
+/*
+.project-hero {
+  background-image: url("images/Project01/CVCDA-Autism-Centre_2-scaled.jpg");
+}
+*/
+/*
+- removed from html - class="h1-dark"
+
+.project-hero .h1-dark {
+  color: #b4aea7;
+}
+*/
 
 .hero::after {
   content: "";
@@ -216,6 +231,19 @@ a.active {
   bottom: 0;
   z-index: 1;
 }
+
+/*
+.project-hero::after {
+  content: "";
+  background: rgba(29, 29, 29, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+*/
 
 .hero > * {
   z-index: 10;
@@ -541,6 +569,18 @@ tfoot {
   filter: none;
 }
 
+/* =====================  PROJECT DETAILS PAGE - MOBILE  ===================== */
+
+.project-hero-title {
+  position: initial;
+  margin-bottom: 5vh;
+}
+
+.project-details-image img {
+  max-width: 100%;
+  object-fit: contain;
+  margin-bottom: 2vh;
+}
 /* =====================  OUR PROMISE PAGE - MOBILE  ===================== */
 
 .promise-text {
@@ -1011,6 +1051,23 @@ textarea {
   .projects-map iframe {
     height: 600px;
     max-width: 100%;
+  }
+
+  /* ================  DESKTOP - PROJECT DETAILS PAGE =================== */
+  .project-details-content {
+    display: flex;
+    gap: 20%;
+    margin-bottom: 5vh;
+  }
+  .project-details-text {
+    margin-top: 0;
+    flex: 0 0 40%;
+  }
+
+  .project-details-heading .cta-wrapper {
+    display: flex;
+    justify-content: left;
+    padding: 7vh 0;
   }
 
   /* ================  DESKTOP - OUR PROMISE PAGE =================== */
