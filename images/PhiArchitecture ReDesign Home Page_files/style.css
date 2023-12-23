@@ -1,0 +1,315 @@
+/* #292929 - #B4AEA7 - #B0815F 
+?   #B4AEA7 L GREY  
+?   #BD871F  RUSTY ORANGE
+?   #FFF7E8 CREAM
+?   #A3927C  Brown
+
+font-family: 'Fira Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Mandali', sans-serif;
+*/
+
+/*-------- GLOBAL STYLES ---------*/
+html {
+  font-size: 62.5%;
+}
+
+/* Used to discover why I had Horizontal scrolling on mobile view.
+  Turns out it was large H2 font size.
+  
+  *, ::before, ::after {
+    outline:2px solid red;
+  }*/
+
+body {
+  box-sizing: border-box;
+  font-size: 1.6rem;
+  text-align: left;
+  margin: 0%;
+  background-color: #292929;
+  font-family: "Mandali", sans-serif;
+  color: #b4aea7;
+}
+
+section {
+  position: relative;
+  max-width: 100vw;
+  margin: auto;
+}
+
+.divider {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-bottom: 1px solid #b4aea7;
+  width: 50%;
+}
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 10% 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Poppins";
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 4.5rem;
+  line-height: 5.5rem;
+  letter-spacing: 0.1rem;
+}
+
+h2 {
+  font-size: 3.2rem;
+  line-height: 4.2rem;
+}
+
+h3 {
+  font-size: 2rem;
+  line-height: 3.3rem;
+}
+
+a {
+  color: #b4aea7;
+  font-family: "Poppins";
+  font-size: 1.6rem;
+}
+a:hover {
+  color: #bd871f;
+  text-decoration: underline;
+  font-weight: 400;
+}
+
+/*
+a.button {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  font-weight: 200;
+  color: #ffffff;
+  background-color: #505d68;
+  border-radius: 3px;
+  padding: 10px 50px;
+}*/
+
+/* ================  HEADER MOBILE SECTION =================== */
+
+header {
+  padding: 0 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: fixed;
+  width: 100%;
+  background-color: rgba(41, 41, 41, 0.8);
+  /* Founf this bg color fix - that left text color alone: https://www.tutorialspoint.com/set-the-opacity-only-to-background-color-not-on-the-text-in-css#:~:text=Sometimes%2C%20we%20may%20require%20to,the%20'background%20color'%20property.*/
+  z-index: 10;
+}
+
+header img {
+  width: 20vw;
+}
+
+.navbar {
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  z-index: 20;
+  width: 100%;
+  text-align: right;
+  padding-right: 40px;
+  color: white;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+
+nav ul li {
+  padding: 8px 0;
+}
+
+nav ul li a {
+  color: #b4aea7;
+}
+
+.show-items {
+  display: flex;
+  flex-direction: column;
+}
+
+nav .fa {
+  font-size: 2rem;
+  color: b4aea7;
+  margin-top: 13px;
+}
+
+header a.button {
+  display: none;
+}
+
+/*  ================    MOBILE - HERO     ==================== */
+
+.hero {
+  display: flex;
+  background-image: url("images/Dunlop Main Dark.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100svh;
+}
+
+.hero .container {
+  display: flex;
+  align-items: center;
+}
+
+/*  ================    MOBILE - BENEFITS     ==================== */
+
+.features .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.features img {
+  margin: 10% 0;
+}
+
+/*  ================    MOBILE - ABOUT     ==================== */
+
+.about img {
+  width: 100%;
+  margin-top: 15%;
+}
+
+.about a {
+  font-size: 2.4rem;
+  display: flex;
+}
+
+.about a:hover {
+  color: #bd871f;
+  text-decoration: underline;
+  font-weight: 400;
+}
+
+.about h3 {
+  line-height: 1rem;
+}
+
+/*  ================    MOBILE - CTA     ==================== */
+
+.cta h3 {
+  margin-bottom: 50px;
+}
+
+.cta a {
+  font-size: 2.4rem;
+  line-height: 1rem;
+}
+
+.cta a:hover {
+  color: #bd871f;
+  text-decoration: underline;
+  font-weight: 400;
+}
+
+
+/*  ================    MOBILE - FOOTER     ==================== */
+/*
+footer ul {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  list-style: none;
+  color: #505d68;
+  padding: 0;
+  text-align: center;
+}
+*/
+footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+footer a {
+  text-transform: initial;
+  text-decoration: underline;
+}
+
+footer a:hover {
+  color: #bd871f;
+  text-decoration: underline;
+  font-weight: 400;
+}
+
+footer a {
+  line-height: 1rem;
+}
+
+footer img {
+  width: 50%;
+  margin-left: -16px;
+  padding: 3% 0;
+}
+
+.copyright {
+  border-top: 1px solid #b4aea7;
+}
+
+.copyright p {
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  font-weight: 200;
+}
+
+/*  ***** START OF DESKTOP SECTIONS *****  */
+
+/* Large devices (desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  section {
+    max-width: 1200px;
+  }
+
+  /* Not sure if this is needed for hamburger menu function. trying to copy from
+previous assignment, because I don't undestand it yet */
+  #nav-items {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+}
+
+/* ================  DESKTOP - HERO SECTION =================== */
+
+/*
+  .hero {
+    display: flex;
+    background-image: url("images/khamkeo-vilaysing-DXTRyjAeA5E-unsplash.jpg");
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    height: 100vh;
+  }
+
+  .hero-container {
+   /* display: flex;
+    justify-items: center;
+    align-items: center; 
+  }
+
+  h1 {
+    max-width: 65%;
+  }
+*/
