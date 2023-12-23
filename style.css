@@ -78,7 +78,7 @@ h1.title {
 }
 
 h2 {
-  font-size: 3.2rem;
+  font-size: 3rem;
   line-height: 4rem;
   margin: 0;
 }
@@ -112,6 +112,7 @@ a {
 
 iframe {
   width: 100%;
+  height: 200px;
   border: none;
   filter: grayscale(100%);
 }
@@ -129,6 +130,10 @@ iframe {
   P {
     font-size: 2.4rem;
     line-height: 3.6rem;
+  }
+
+  iframe {
+    height: 350px;
   }
 }
 /* ================  HEADER SECTION HOME PAGE MOBILE =================== */
@@ -331,11 +336,12 @@ a.cta {
 
 /*  ================    MAIN-MOBILE - CONTACT     ==================== */
 
+/*
 .contact-map {
   max-width: 90%;
   padding-top: 10vh;
 }
-
+*/
 /*  ================    MAIN-MOBILE - FOOTER     ==================== */
 
 footer .container {
@@ -546,26 +552,30 @@ tfoot {
   font-size: 1.4rem;
   text-align: center;
 }
-
+/*
 .projects-map {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 7vh 0;
 }
+*/
+.projects-map {
+  height: 80vh;
+}
 
 .projects-section-title {
   padding-bottom: 40px;
 }
-
+/*
 .projects-map iframe {
   filter: grayscale(100%);
   border: none;
   padding-top: 3px;
   max-width: 90%;
 }
-
-.projects-map iframe:hover {
+*/
+iframe:hover {
   filter: none;
 }
 
@@ -580,6 +590,14 @@ tfoot {
   max-width: 100%;
   object-fit: contain;
   margin-bottom: 2vh;
+}
+
+.project-details-heading .cta-wrapper {
+  display: none;
+}
+
+.project-details-text {
+  margin-bottom: 5vh;
 }
 /* =====================  OUR PROMISE PAGE - MOBILE  ===================== */
 
@@ -798,7 +816,7 @@ textarea {
   }
 
   h2 {
-    font-size: 6.5rem;
+    font-size: 6rem;
     line-height: 8rem;
   }
 
@@ -1043,16 +1061,17 @@ textarea {
   td {
     padding: 14px 5px;
   }
-
+  /*
   .projects-map {
     padding: 7vh 0;
+    width: 90%;
   }
 
-  .projects-map iframe {
+  .projects-map-wrapper iframe {
     height: 600px;
     max-width: 100%;
   }
-
+*/
   /* ================  DESKTOP - PROJECT DETAILS PAGE =================== */
   .project-details-content {
     display: flex;
@@ -1096,11 +1115,11 @@ textarea {
   }
 
   /* ================  DESKTOP - CONTACT PAGE =================== */
-
+  /*
   .contact-map {
     padding-top: 10vh;
   }
-
+*/
   .contact-title {
     padding-bottom: 0;
   }
@@ -1155,4 +1174,9 @@ textarea {
   input[type="submit"] {
     font-size: 4rem;
   }
+  /*
+  .contact-map > iframe {
+    height: 550px;
+  }
+  */
 }
